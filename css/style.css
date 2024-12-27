@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #B58DB6;
+    --secondary-color: #E8D6CB;
+    --accent-color: #2B2D42;
+    --text-color: #5D2E46;
+    --background-color: #f0e7e7;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    padding: 0.5rem 0;
+}
+
+nav button {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    color: var(--text-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav button:hover {
+    color: var(--accent-color);
+}
+
+nav button.active {
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--accent-color);
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+.subject-section {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subject-section h2 {
+    color: var(--accent-color);
+}
+
+.study-guide ul {
+    list-style-type: disc;
+    margin: 1rem 0 0 1.5rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem; /* Adds spacing above the button */
+}
+
+button:hover {
+    background-color: #9c6e84;
+    transition: 0.5s;
+    color: white;
+}
+
+.quiz-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.problem {
+    margin-bottom: 1.5rem; /* More space between each question */
+}
+
+.problem label {
+    display: block; /* Makes each option on a new line */
+    margin-bottom: 0.5rem; /* Space between options */
+}
+
+button {
+    padding: 1rem 2rem; /* Increases padding for better spacing */
+}
+
+#result {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.study-guide a {
+    color: var(--text-color); /* Use the desired text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.study-guide a:hover {
+    color: var(--primary-color); /* Change color on hover */
+}

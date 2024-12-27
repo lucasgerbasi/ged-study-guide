@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GED Study Time</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>STUDY TIME</h1>
+        <p><img src="assets/bunny_hearts.png" alt="Heart Bunny"></p>
+        <h2 style="color: var(--accent-color)">I LOVE YOU</h2>
+    </header>
+    <nav>
+        <button onclick="showTab('math')" class="active">Math</button>
+        <button onclick="showTab('science')">Science</button>
+        <button onclick="showTab('social-studies')">Social Studies</button>
+        <button onclick="showTab('language-arts')">Language Arts</button>
+    </nav>
+    <main>
+        <section id="math" class="subject-section active">
+            <h2>Math</h2>
+            <div class="study-guide">
+                <h3>Study Guide</h3>
+                <ul>
+                    <li><a href="pages/basic-arithmetic.html">Basic Arithmetic (15%)</a></li>
+                    <li><a href="pages/algebra.html">Algebra Basics (55%)</a></li>
+                    <li><a href="pages/geometry.html">Geometry (15%)</a></li>
+                    <li><a href="pages/data-interpretation.html">Data Interpretation (15%)</a></li>
+                </ul>
+                
+                <img src="assets/cheer.png" style="max-height: 200px; padding-left: 50px; padding-top: 40px;">
+            </div>
+        </section>
+        <section id="science" class="subject-section">
+            <h2>Science</h2>
+            <div class="study-guide">
+                <h3>Study Guide</h3>
+                <ul>
+                    <li><a href="pages/life-science.html">Life Science (40%)</a></li>
+                    <li><a href="pages/physical-science.html">Physical Science (40%)</a></li>
+                    <li><a href="pages/earth-space-science.html">Earth and Space Science (20%)</a></li>
+                </ul>
+
+                <img src="assets/cheer.png" style="max-height: 200px; padding-left: 50px; padding-top: 40px;">
+            </div>
+        </section>
+        <section id="social-studies" class="subject-section">
+            <h2>Social Studies</h2>
+            <div class="study-guide">
+                <h3>Study Guide</h3>
+                <ul>
+                    <li><a href="pages/civics-government.html">Civics and Government (50%)</a></li>
+                    <li><a href="pages/us-history.html">US History (20%)</a></li>
+                    <li><a href="pages/economics.html">Economics (15%)</a></li>
+                    <li><a href="pages/geography.html">World Geography (15%)</a></li>
+                </ul>
+
+                <img src="assets/cheer.png" style="max-height: 200px; padding-left: 50px; padding-top: 40px;">
+            </div>
+        </section>
+        <section id="language-arts" class="subject-section">
+            <h2>Language Arts</h2>
+            <p>
+                i don't know just have common sense and read and understand
+            </p>
+            <img src="assets/shruggington.png" style="max-height: 200px;">
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 GED Willow Study Helper. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
